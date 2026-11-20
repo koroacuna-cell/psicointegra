@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Psicointegra | Ps. Anaís Núñez. Psicóloga online en Chile. Trauma, ansiedad, TLP. Agenda tu sesión. Registro 881079.">
+<meta name="description" content="Psicointegra | Ps. Anaís Núñez. Psicóloga online en Chile. Trauma, ansiedad, TLP. Tarifas ajustadas. Registro 881079.">
 <title>Psicointegra | Ps. Anaís Núñez - Psicóloga Online en Chile</title>
 <link rel="canonical" href="https://koroacuna-cell.github.io/psicointegra/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,18 +29,24 @@ nav a:hover{color:var(--salvia-oscuro)}
 .btn-salvia:hover{background:var(--cafe);transform:translateY(-2px)}
 .btn-urgencia{background:var(--cafe);color:var(--marfil);animation:pulse-btn 2s infinite}
 @keyframes pulse-btn{0%{box-shadow:0 0 0 0 rgba(44,34,27,.4)}70%{box-shadow:0 0 0 10px rgba(44,34,27,0)}100%{box-shadow:0 0 0 0 rgba(44,34,27,0)}}
-.hero{padding:4rem 5% 3rem;background:linear-gradient(180deg,var(--marfil) 0%,var(--beige-suave) 100%);text-align:center}
-.hero h1{font-size:2.8rem;margin-bottom:.5rem}
+.hero{padding:3.5rem 5% 2rem;background:linear-gradient(180deg,var(--marfil) 0%,var(--beige-suave) 100%);text-align:center}
+.hero h1{font-size:2.6rem;margin-bottom:.5rem}
 .hero p{max-width:600px;margin:0 auto 1.5rem;color:var(--cafe-texto);font-size:1.1rem}
-.urgency-banner{background:var(--blanco);border:2px solid var(--salvia);border-radius:16px;padding:1.5rem;margin:2rem auto;max-width:800px;box-shadow:var(--sombra)}
-.urgency-banner h3{color:var(--salvia-oscuro);font-size:1.2rem;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:.5rem}
+.tarifas-top{background:var(--blanco);border-top:4px solid var(--salvia);border-radius:16px;padding:2rem;margin:1.5rem auto;max-width:800px;box-shadow:var(--sombra);text-align:center}
+.tarifas-top h3{color:var(--salvia-oscuro);font-size:1.4rem;margin-bottom:1rem}
+.tarifas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-bottom:1rem}
+.tarifa-item{background:var(--beige-suave);padding:1rem;border-radius:10px}
+.tarifa-item .etiq{font-size:.75rem;text-transform:uppercase;letter-spacing:1px;color:var(--taupe);display:block;margin-bottom:.3rem}
+.tarifa-item .val{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--cafe);display:block}
+.urgency-banner{background:var(--salvia-oscuro);color:var(--marfil);border-radius:16px;padding:1.5rem;margin:2rem auto;max-width:800px;box-shadow:var(--sombra)}
+.urgency-banner h3{color:var(--marfil);font-size:1.2rem;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:.5rem}
 .calendar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:.8rem;margin-bottom:1.2rem}
-.cal-day{background:var(--beige-suave);padding:.8rem;border-radius:10px;text-align:center;font-size:.85rem}
-.cal-day .dia{font-weight:700;color:var(--cafe);display:block}
-.cal-day .estado{font-size:.75rem;color:var(--taupe);margin-top:.2rem}
-.cal-day.disponible{background:var(--salvia);color:var(--marfil)}
-.cal-day.disponible .dia, .cal-day.disponible .estado{color:var(--marfil);font-weight:700}
-section{padding:3.5rem 5%}
+.cal-day{background:rgba(255,255,255,.15);padding:.8rem;border-radius:10px;text-align:center;font-size:.85rem}
+.cal-day .dia{font-weight:700;color:var(--marfil);display:block}
+.cal-day .estado{font-size:.75rem;color:var(--beige);margin-top:.2rem}
+.cal-day.disponible{background:var(--marfil);color:var(--salvia-oscuro)}
+.cal-day.disponible .dia, .cal-day.disponible .estado{color:var(--salvia-oscuro);font-weight:700}
+section{padding:3rem 5%}
 .wrap{max-width:900px;margin:0 auto}
 .sec-title{text-align:center;font-size:1.9rem;margin-bottom:.5rem}
 .sec-kicker{text-align:center;letter-spacing:3px;text-transform:uppercase;font-size:.75rem;color:var(--taupe);font-weight:700;margin-bottom:.5rem}
@@ -55,12 +61,6 @@ section{padding:3.5rem 5%}
 .faq ul{list-style:none;padding:0}
 .faq li{padding:.4rem 0 .4rem 1.5rem;position:relative}
 .faq li::before{content:"✦";position:absolute;left:0;color:var(--salvia)}
-.price-highlight{background:var(--salvia-oscuro);color:var(--marfil);padding:2.5rem 5%;text-align:center;border-radius:20px;margin:2rem 0}
-.price-highlight h3{color:var(--marfil);font-size:1.6rem;margin-bottom:1rem}
-.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem}
-.price-card{background:rgba(255,255,255,.15);padding:1.2rem;border-radius:12px;backdrop-filter:blur(5px)}
-.price-card .etiq{font-size:.8rem;text-transform:uppercase;letter-spacing:1px;opacity:.9;display:block;margin-bottom:.3rem}
-.price-card .val{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;display:block}
 .contact-box{background:var(--beige);border-radius:20px;padding:2.5rem 2rem;text-align:center}
 .contact-data{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;margin-top:1.5rem;font-size:.95rem}
 .contact-data a{color:var(--cafe);text-decoration:none;font-weight:600;border-bottom:1px solid var(--salvia)}
@@ -70,11 +70,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2.5re
 .wa-float{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:var(--salvia-oscuro);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(44,34,27,.4);z-index:1000;animation:pulse-wa 2.5s infinite}
 .wa-float svg{width:30px;height:30px;fill:var(--marfil)}
 @keyframes pulse-wa{0%{box-shadow:0 0 0 0 rgba(90,107,82,.6)}70%{box-shadow:0 0 0 15px rgba(90,107,82,0)}100%{box-shadow:0 0 0 0 rgba(90,107,82,0)}}
-@media(max-width:768px){
-  nav{display:none}
-  .hero h1{font-size:2.2rem}
-  .calendar-grid{grid-template-columns:repeat(3,1fr)}
-}
+@media(max-width:768px){nav{display:none}.hero h1{font-size:2.2rem}.calendar-grid{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
@@ -84,9 +80,8 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2.5re
 <div class="brand-txt"><strong>ANAÍS NÚÑEZ</strong><span>Psicóloga</span></div>
 </div>
 <nav>
-<a href="#agenda">Agenda</a>
+<a href="#tarifas">Tarifas</a>
 <a href="#servicios">Servicios</a>
-<a href="#precios">Precios</a>
 <a href="#contacto">Contacto</a>
 </nav>
 <a class="btn btn-salvia" href="https://wa.me/56968506890" target="_blank">Agendar</a>
@@ -98,20 +93,36 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2.5re
 <a class="btn btn-urgencia" href="https://wa.me/56968506890?text=Hola%20Ana%C3%ADs%2C%20quiero%20agendar%20una%20sesi%C3%B3n" target="_blank">Reservar mi hora ahora</a>
 </div>
 
+<section id="tarifas" style="padding-top:1rem; padding-bottom:1rem;">
+<div class="wrap">
+<div class="tarifas-top">
+<h3>Tarifas Ajustadas y Accesibles</h3>
+<p style="font-size:.95rem;color:var(--taupe);margin-bottom:1.2rem">La salud mental es una prioridad. Ofrecemos valores transparentes y opciones para todos.</p>
+<div class="tarifas-grid">
+<div class="tarifa-item"><span class="etiq">Arancel Diferencial (RSH 40%)</span><span class="val">$15.000</span></div>
+<div class="tarifa-item"><span class="etiq">Arancel Particular</span><span class="val">$35.000</span></div>
+<div class="tarifa-item"><span class="etiq">Pack 5 Sesiones</span><span class="val">$65k / $160k</span></div>
+<div class="tarifa-item"><span class="etiq">Talleres Grupales</span><span class="val">$10.000</span></div>
+</div>
+<p style="font-size:.85rem;color:var(--taupe)">Se emite boleta para reembolso en Isapre/Fonasa. El arancel diferencial se coordina por WhatsApp al reservar.</p>
+</div>
+</div>
+</section>
+
 <section id="agenda">
 <div class="wrap">
 <div class="urgency-banner">
-<h3>📅 Disponibilidad de esta semana</h3>
+<h3>📅 Disponibilidad de los próximos días</h3>
 <div class="calendar-grid">
-<div class="cal-day"><span class="dia">Lunes</span><span class="estado">Completo</span></div>
 <div class="cal-day"><span class="dia">Martes</span><span class="estado">2 cupos</span></div>
 <div class="cal-day disponible"><span class="dia">Miércoles</span><span class="estado">Disponible</span></div>
 <div class="cal-day disponible"><span class="dia">Jueves</span><span class="estado">Disponible</span></div>
 <div class="cal-day"><span class="dia">Viernes</span><span class="estado">1 cupo</span></div>
+<div class="cal-day"><span class="dia">Próx. Semana</span><span class="estado">Abierta</span></div>
 </div>
-<p style="text-align:center;font-size:.9rem;color:var(--taupe);margin-bottom:1rem">Los horarios se actualizan diariamente. Pago anticipado para confirmar.</p>
+<p style="text-align:center;font-size:.9rem;color:var(--beige);margin-bottom:1rem;opacity:.9">Los horarios se actualizan diariamente. Pago anticipado para confirmar.</p>
 <div style="text-align:center">
-<a class="btn btn-salvia" href="https://wa.me/56968506890?text=Hola%2C%20vi%20disponibilidad%20en%20la%20web%20y%20quiero%20reservar" target="_blank">Asegurar mi cupo por WhatsApp</a>
+<a class="btn" href="https://wa.me/56968506890?text=Hola%2C%20vi%20disponibilidad%20en%20la%20web%20y%20quiero%20reservar" target="_blank" style="background:var(--marfil);color:var(--salvia-oscuro)">Asegurar mi cupo por WhatsApp</a>
 </div>
 </div>
 </div>
@@ -132,22 +143,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2.5re
 </div>
 </section>
 
-<section id="precios">
-<div class="wrap">
-<div class="price-highlight">
-<h3>Inversión Transparente y Accesible</h3>
-<div class="price-grid">
-<div class="price-card"><span class="etiq">Arancel Diferencial (RSH 40%)</span><span class="val">$15.000</span></div>
-<div class="price-card"><span class="etiq">Arancel Particular</span><span class="val">$35.000</span></div>
-<div class="price-card"><span class="etiq">Pack 5 Sesiones</span><span class="val">$65k / $160k</span></div>
-<div class="price-card"><span class="etiq">Talleres Grupales</span><span class="val">$10.000</span></div>
-</div>
-<p style="font-size:.95rem;opacity:.9;max-width:600px;margin:0 auto">La salud mental es una prioridad. El arancel diferencial se coordina directamente por WhatsApp al momento de reservar. Se emite boleta para reembolso en Isapre/Fonasa.</p>
-</div>
-</div>
-</section>
-
-<section id="talleres-recursos" style="background:var(--beige-suave)">
+<section id="talleres-recursos">
 <div class="wrap">
 <p class="sec-kicker">Más recursos para ti</p>
 <h2 class="sec-title">Talleres y Biblioteca</h2>
@@ -168,86 +164,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2.5re
 </div>
 </section>
 
-<section id="sobre-mi">
-<div class="wrap">
-<p class="sec-kicker">Conoce a tu psicóloga</p>
-<h2 class="sec-title">Sobre Ps. Anaís Núñez</h2>
-<div class="sec-rule"></div>
-<div class="faq">
-<details>
-<summary>Leer mi historia y formación profesional</summary>
-<p>Soy Anaís Núñez, psicóloga de la Universidad de Playa Ancha, con diplomado en Salud Mental en APS y actualmente cursando postítulo en Terapia Sistémica Breve. Me especializo en trauma y casos de alta complejidad.</p>
-<p>Creo en una psicología que no solo identifica dificultades, sino que reconoce tus recursos. Mi propósito es acompañarte a construir una vida con sentido, respetando tu historia y tus tiempos. <em>"No se trata de adaptarte a cualquier costo, sino de reconocer qué aspectos de tu entorno necesitan transformarse".</em></p>
-<p style="margin-top:1rem"><strong>Experiencia:</strong> Intervención en centros de tratamiento de adicciones, psicoterapia online, talleres psicosociales y prevención en contextos laborales.</p>
-</details>
-</div>
-</div>
-</section>
-
-<section id="contacto">
-<div class="wrap">
-<div class="contact-box">
-<h2>Da el primer paso hoy</h2>
-<p>No necesitas tener un diagnóstico ni saber exactamente qué te ocurre. Podemos descubrirlo en conjunto.</p>
-<a class="btn btn-salvia" href="https://wa.me/56968506890?text=Hola%20Ana%C3%ADs%2C%20quiero%20comenzar%20mi%20proceso%20terap%C3%A9utico" target="_blank">Comenzar mi proceso</a>
-<div class="contact-data">
-<span>📱 <a href="https://wa.me/56968506890">+56 9 6850 6890</a></span>
-<span>✉️ <a href="mailto:ps.anaisnunez@gmail.com">ps.anaisnunez@gmail.com</a></span>
-<span>🩺 <a href="https://www.doctoralia.cl/perfil/anais-nunez-hidalgo" target="_blank">Ver perfil en Doctoralia</a></span>
-</div>
-</div>
-</div>
-</section>
-
-<footer>
-<p class="foot-brand">Psicointegra | Ps. Anaís Núñez</p>
-<p style="font-size:.85rem;opacity:.8">Registro Superintendencia de Salud N° 881079 · Atención 100% online en Chile</p>
-<p class="foot-legal">La información compartida está protegida por confidencialidad profesional. Este sitio es informativo y no reemplaza la atención de urgencia: ante una crisis, contacta a Salud Responde 600 360 7777 o al 1455 (SOS-Vida).<br>© 2026 Psicointegra · Villa Alemana, V Región</p>
-</footer>
-
-<a class="wa-float" href="https://wa.me/56968506890" target="_blank" aria-label="WhatsApp">
-<svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-</a>
-</body>
-</html>
-
-<section id="precios">
-<div class="wrap">
-<div class="price-highlight">
-<h3>Inversión Transparente y Accesible</h3>
-<div class="price-grid">
-<div class="price-card"><span class="etiq">Arancel Diferencial (RSH 40%)</span><span class="val">$15.000</span></div>
-<div class="price-card"><span class="etiq">Arancel Particular</span><span class="val">$35.000</span></div>
-<div class="price-card"><span class="etiq">Pack 5 Sesiones</span><span class="val">$65k / $160k</span></div>
-<div class="price-card"><span class="etiq">Talleres Grupales</span><span class="val">$10.000</span></div>
-</div>
-<p style="font-size:.95rem;opacity:.9;max-width:600px;margin:0 auto">La salud mental es una prioridad. El arancel diferencial se coordina directamente por WhatsApp al momento de reservar. Se emite boleta para reembolso en Isapre/Fonasa.</p>
-</div>
-</div>
-</section>
-
-<section id="talleres-recursos" style="background:var(--beige-suave)">
-<div class="wrap">
-<p class="sec-kicker">Más recursos para ti</p>
-<h2 class="sec-title">Talleres y Biblioteca</h2>
-<div class="sec-rule"></div>
-<div class="faq">
-<details><summary>Talleres Grupales ($10.000 / sesión)</summary>
-<ul>
-<li><strong>Maternidad y cuidados:</strong> Salud mental materna.</li>
-<li><strong>Parentalidad:</strong> Habilidades y vínculos familiares.</li>
-<li><strong>Autoconocimiento:</strong> Autoestima e identidad.</li>
-<li><strong>Relaciones de pareja:</strong> Comunicación y responsabilidad afectiva.</li>
-</ul>
-</details>
-<details><summary>Guías Terapéuticas Digitales (Desde $5.000)</summary>
-<p>Material práctico con 25-50 estrategias sobre: manejo de ansiedad, comunicación asertiva, identificación de emociones y herramientas para el consumo problemático.</p>
-</details>
-</div>
-</div>
-</section>
-
-<section id="sobre-mi">
+<section id="sobre-mi" style="background:var(--beige-suave)">
 <div class="wrap">
 <p class="sec-kicker">Conoce a tu psicóloga</p>
 <h2 class="sec-title">Sobre Ps. Anaís Núñez</h2>
