@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Psicointegra | Ps. Anaís Núñez. Atención psicológica integral y especializada.">
+<meta name="description" content="Psicointegra | Ps. Anaís Núñez. Atención psicológica integral, trauma, adicciones y regulación emocional. Terapia online en Chile. Registro 881079.">
 <title>Psicointegra | Ps. Anaís Núñez - Psicóloga Online en Chile</title>
 <link rel="canonical" href="https://koroacuna-cell.github.io/psicointegra/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@ html{scroll-behavior:smooth}
 body{font-family:'Lora',serif;background:var(--marfil);color:var(--cafe);line-height:1.75;font-size:1.02rem}
 h1,h2,h3,h4{font-family:'Playfair Display',serif;color:var(--cafe);font-weight:600;line-height:1.25}
 img{max-width:100%}
-header{background:rgba(250,246,238,.92);backdrop-filter:blur(10px);padding:.9rem 5%;display:flex;align-items:center;justify-content:space-between;gap:1rem;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(183,164,139,.25)}
+header{background:rgba(250,246,238,.95);backdrop-filter:blur(10px);padding:.9rem 5%;display:flex;align-items:center;justify-content:space-between;gap:1rem;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(183,164,139,.25)}
 .brand{display:flex;align-items:center;gap:.8rem}
 .brand img{height:64px;width:64px;border-radius:50%;object-fit:cover;background:var(--beige-suave)}
 .brand-txt strong{font-family:'Playfair Display',serif;font-size:1.05rem;letter-spacing:1px;display:block}
@@ -24,7 +24,7 @@ header{background:rgba(250,246,238,.92);backdrop-filter:blur(10px);padding:.9rem
 nav{display:flex;gap:1.3rem;align-items:center;flex-wrap:wrap;justify-content:center}
 nav a{text-decoration:none;color:var(--cafe-suave);font-size:.88rem;letter-spacing:.5px;transition:.3s;padding-bottom:2px}
 nav a:hover{color:var(--salvia-oscuro);border-bottom:1px solid var(--salvia)}
-.btn{display:inline-block;text-decoration:none;border-radius:50px;padding:.85rem 2rem;font-family:'Lora',serif;font-size:.95rem;transition:.3s;cursor:pointer;border:none}
+.btn{display:inline-block;text-decoration:none;border-radius:50px;padding:.85rem 2rem;font-family:'Lora',serif;font-size:.95rem;transition:.3s;cursor:pointer;border:none;font-weight:600}
 .btn-salvia{background:var(--salvia-oscuro);color:var(--marfil);box-shadow:0 6px 18px rgba(110,127,102,.35)}
 .btn-salvia:hover{background:var(--cafe);transform:translateY(-2px)}
 .btn-linea{background:transparent;border:1px solid var(--taupe);color:var(--cafe)}
@@ -71,23 +71,21 @@ section{padding:4.5rem 5%}
 .sub-card ul{list-style:none}
 .sub-card li{padding:.55rem 0 .55rem 1.4rem;position:relative;font-size:.95rem;color:var(--cafe-suave)}
 .sub-card li::before{content:"";position:absolute;left:0;top:1.05rem;width:8px;height:8px;border-radius:50%;background:var(--taupe)}
-.num-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem;margin-top:2rem}
-.num-item{background:var(--blanco);border:1px solid rgba(183,164,139,.3);border-radius:16px;padding:1.6rem;transition:.3s}
-.num-item:hover{box-shadow:var(--sombra)}
-.num-item .n{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--salvia);display:block;margin-bottom:.4rem}
-.num-item h4{font-size:1.05rem;margin-bottom:.5rem}
-.num-item p{font-size:.9rem;color:var(--cafe-suave)}
 .note{margin-top:2rem;text-align:center;font-style:italic;color:var(--taupe);font-size:.95rem}
-.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.6rem;margin-top:1rem}
-.price-card{background:var(--beige-suave);border:1px solid rgba(183,164,139,.35);border-radius:20px;padding:2.2rem 1.6rem;text-align:center}
-.price-card.destacado{background:var(--cafe);color:var(--marfil);border-color:var(--cafe)}
-.price-card h4{font-size:1rem;letter-spacing:1px;text-transform:uppercase;font-family:'Lora',serif;font-weight:500;color:var(--taupe);margin-bottom:.8rem}
-.price-card.destacado h4{color:var(--beige)}
-.price-card .valor{font-family:'Playfair Display',serif;font-size:2.4rem;display:block;margin-bottom:.3rem}
-.price-card .desc{font-size:.85rem;color:var(--cafe-suave)}
-.price-card.destacado .desc{color:var(--beige)}
-.price-card .tag{display:inline-block;margin-top:.9rem;font-size:.75rem;letter-spacing:1px;text-transform:uppercase;background:rgba(138,154,130,.25);color:var(--cafe);padding:.35rem .9rem;border-radius:50px}
-.price-card.destacado .tag{background:var(--salvia);color:var(--marfil)}
+.price-banner{background:var(--salvia-oscuro);color:var(--marfil);text-align:center;padding:3rem 5%}
+.price-banner h3{color:var(--marfil);font-size:1.8rem;margin-bottom:.5rem}
+.price-banner p{font-size:1.1rem;opacity:.9;margin-bottom:1.5rem}
+.price-cards{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;margin-bottom:2rem}
+.price-cards .card{background:rgba(255,255,255,.12);padding:1.2rem 1.8rem;border-radius:14px;backdrop-filter:blur(6px);min-width:200px}
+.price-cards .card .etiq{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:1px;opacity:.85;margin-bottom:.3rem}
+.price-cards .card .val{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;display:block}
+.faq{max-width:800px;margin:0 auto}
+.faq details{background:var(--blanco);border:1px solid rgba(183,164,139,.3);border-radius:14px;margin-bottom:1rem;padding:1.15rem 1.5rem;cursor:pointer;transition:.3s}
+.faq details[open]{box-shadow:var(--sombra);border-left:4px solid var(--salvia)}
+.faq summary{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cafe);list-style:none;display:flex;justify-content:space-between;align-items:center;font-weight:600}
+.faq summary::after{content:"+";color:var(--salvia-oscuro);font-size:1.4rem}
+.faq details[open] summary::after{content:"−"}
+.faq p{margin-top:.9rem;font-size:.95rem;color:var(--cafe-suave);line-height:1.6}
 .table{width:100%;border-collapse:collapse;margin-top:1.5rem;background:var(--blanco);border-radius:16px;overflow:hidden;box-shadow:var(--sombra)}
 .table td{padding:.9rem 1.2rem;border-bottom:1px solid rgba(183,164,139,.25);font-size:.93rem}
 .table tr:last-child td{border-bottom:none}
@@ -98,13 +96,6 @@ section{padding:4.5rem 5%}
 .step::before{counter-increment:p;content:counter(p);font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--salvia-oscuro);background:var(--blanco);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid var(--salvia)}
 .step p{font-size:.95rem;color:var(--cafe-suave)}
 .step strong{color:var(--cafe)}
-.faq{max-width:760px;margin:0 auto}
-.faq details{background:var(--blanco);border:1px solid rgba(183,164,139,.3);border-radius:14px;margin-bottom:1rem;padding:1.15rem 1.5rem;cursor:pointer}
-.faq details[open]{box-shadow:var(--sombra)}
-.faq summary{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cafe);list-style:none;display:flex;justify-content:space-between;align-items:center}
-.faq summary::after{content:"+";color:var(--salvia-oscuro);font-size:1.4rem}
-.faq details[open] summary::after{content:"−"}
-.faq p{margin-top:.9rem;font-size:.95rem;color:var(--cafe-suave)}
 .contact-box{background:var(--beige);border-radius:24px;padding:3rem 2rem;text-align:center;position:relative;overflow:hidden}
 .contact-box h2{font-size:1.9rem;margin-bottom:.6rem}
 .contact-box p{color:var(--cafe-suave);max-width:560px;margin:0 auto 1.8rem}
@@ -139,9 +130,9 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 </nav>
 <a class="btn btn-salvia" href="https://wa.me/56968506890" target="_blank">Agenda tu sesión</a>
 </header>
+
 <div class="hero" id="inicio">
-<div class="blob b1"></div>
-<div class="blob b2"></div>
+<div class="blob b1"></div><div class="blob b2"></div>
 <div class="hero-inner">
 <div class="hero-txt">
 <span class="hero-kicker">Psicóloga Anaís Núñez</span>
@@ -157,6 +148,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 </div>
 </div>
 </div>
+
 <section id="sobre">
 <div class="wrap">
 <p class="sec-kicker">Sobre mí</p>
@@ -192,6 +184,20 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 </div>
 </div>
 </section>
+
+<section class="price-banner">
+<div class="wrap">
+<h3>Inversión accesible en tu bienestar</h3>
+<p>La salud mental es una prioridad. Ofrecemos aranceles transparentes y accesibles.</p>
+<div class="price-cards">
+<div class="card"><span class="etiq">Arancel Diferencial (RSH 40%)</span><span class="val">$15.000 <small style="font-size:.9rem;font-weight:400">/ sesión</small></span></div>
+<div class="card"><span class="etiq">Arancel Particular</span><span class="val">$35.000 <small style="font-size:.9rem;font-weight:400">/ sesión</small></span></div>
+<div class="card"><span class="etiq">Talleres Grupales</span><span class="val">$10.000 <small style="font-size:.9rem;font-weight:400">/ sesión</small></span></div>
+</div>
+<a class="btn" href="https://wa.me/56968506890?text=Hola%20Ana%C3%ADs%2C%20quiero%20consultar%20disponibilidad%20de%20horarios" target="_blank" style="background:var(--marfil);color:var(--salvia-oscuro)">Consultar disponibilidad de horarios</a>
+</div>
+</section>
+
 <section id="enfoque" style="background:var(--beige-suave)">
 <div class="wrap">
 <p class="sec-kicker">Enfoque terapéutico</p>
@@ -215,7 +221,9 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 </div>
 </div>
 </section>
+
 <div class="quote">"Porque el cambio es posible, y no tienes que hacerlo solo/a"<small></small></div>
+
 <section id="servicios">
 <div class="wrap">
 <p class="sec-kicker">Servicios</p>
@@ -234,63 +242,75 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <div class="svc"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="2.5"/><circle cx="16" cy="8" r="2.5"/><circle cx="12" cy="13" r="2.5"/><path d="M4 20c0-3 2-4 4-4m8 0c2 0 4 1 4 4m-10 4c0-2 1-3 2-3m4 3c0-2-1-3-2-3"/></svg><h3>Programas grupales</h3><p>Talleres y encuentros</p></div>
 </div>
 </div>
+
 <h3 style="margin-top:2.6rem;text-align:center;font-size:1.5rem">Áreas de trabajo</h3>
-<div class="num-list">
-<div class="num-item"><span class="n">01</span><h4>Trauma y experiencias adversas</h4><p>Acompañamiento de experiencias traumáticas, trauma complejo y sus repercusiones en la vida emocional y relacional.</p></div>
-<div class="num-item"><span class="n">02</span><h4>Adicciones y consumo problemático</h4><p>Abordaje del consumo de alcohol y otras sustancias, identificación de patrones, motivación para el cambio y prevención de recaídas.</p></div>
-<div class="num-item"><span class="n">03</span><h4>Ansiedad y depresión</h4><p>Comprensión de las dificultades emocionales y desarrollo de herramientas para afrontar situaciones que afectan el bienestar cotidiano.</p></div>
-<div class="num-item"><span class="n">04</span><h4>Regulación emocional</h4><p>Reconocimiento, comprensión y manejo de experiencias emocionales intensas.</p></div>
-<div class="num-item"><span class="n">05</span><h4>Trastorno límite de la personalidad (TLP)</h4><p>Acompañamiento de dificultades relacionadas con la regulación emocional, las relaciones interpersonales y la identidad.</p></div>
-<div class="num-item"><span class="n">06</span><h4>Ideación suicida</h4><p>Evaluación y acompañamiento psicológico de personas que atraviesan experiencias de sufrimiento emocional y pensamientos suicidas, considerando sus necesidades de seguridad y apoyo.</p></div>
+<p class="note" style="margin-bottom:1.5rem">No necesitas tener un diagnóstico ni saber exactamente qué te ocurre para comenzar. Podemos descubrirlo y comprenderlo en conjunto.</p>
+
+<div class="faq">
+<details><summary>01. Trauma y experiencias adversas</summary><p>Acompañamiento de experiencias traumáticas, trauma complejo y sus repercusiones en la vida emocional y relacional.</p></details>
+<details><summary>02. Adicciones y consumo problemático</summary><p>Abordaje del consumo de alcohol y otras sustancias, identificación de patrones, motivación para el cambio y prevención de recaídas.</p></details>
+<details><summary>03. Ansiedad y depresión</summary><p>Comprensión de las dificultades emocionales y desarrollo de herramientas para afrontar situaciones que afectan el bienestar cotidiano.</p></details>
+<details><summary>04. Regulación emocional</summary><p>Reconocimiento, comprensión y manejo de experiencias emocionales intensas.</p></details>
+<details><summary>05. Trastorno límite de la personalidad (TLP)</summary><p>Acompañamiento de dificultades relacionadas con la regulación emocional, las relaciones interpersonales y la identidad.</p></details>
+<details><summary>06. Ideación suicida</summary><p>Evaluación y acompañamiento psicológico de personas que atraviesan experiencias de sufrimiento emocional y pensamientos suicidas, considerando sus necesidades de seguridad y apoyo.</p></details>
 </div>
-<p class="note">No necesitas tener un diagnóstico ni saber exactamente qué te ocurre para comenzar un proceso terapéutico. Podemos descubrirlo y comprenderlo en conjunto.</p>
-<div class="sub-cards" style="margin-top:2.5rem">
+
+<div class="sub-cards" style="margin-top:3rem">
 <div class="sub-card">
 <h3>Evaluación y certificado de mascotas de apoyo emocional</h3>
 <p style="font-size:.95rem;color:var(--cafe-suave)">Proceso de evaluación orientado a explorar la pertinencia de contar con un animal de apoyo emocional, considerando las necesidades y circunstancias particulares de la persona.</p>
 <p style="font-size:.85rem;color:var(--taupe);margin-top:.8rem;font-style:italic">La emisión de un certificado estará sujeta a la evaluación profesional y a los criterios correspondientes. No se garantiza su emisión por el solo hecho de solicitarlo.</p>
 </div>
 <div class="sub-card" style="text-align:center;display:flex;flex-direction:column;justify-content:center">
-<h3>Arancel</h3>
+<h3>Arancel de evaluación</h3>
 <span style="font-family:'Playfair Display',serif;font-size:2.6rem;color:var(--salvia-oscuro)">$45.000</span>
 <p style="font-size:.85rem;color:var(--taupe)">La entrega del certificado se realiza en plazo de 24 horas, según los resultados de la evaluación.</p>
 </div>
 </div>
 </div>
 </section>
+
 <section id="aranceles" style="background:var(--beige-suave)">
 <div class="wrap">
 <p class="sec-kicker">Aranceles y modalidades</p>
 <h2 class="sec-title">Inversión en tu proceso</h2>
 <div class="sec-rule"></div>
-<div class="price-grid">
-<div class="price-card"><h4>Psicoterapia individual</h4><span class="valor">$35.000</span><span class="desc">Arancel particular · por sesión</span><span class="tag">Pago anticipado</span></div>
-<div class="price-card destacado"><h4>Arancel diferencial</h4><span class="valor">$15.000</span><span class="desc">Por sesión · RSH hasta el 40%</span><span class="tag">Accesibilidad real</span></div>
-<div class="price-card"><h4>Pack 5 sesiones</h4><span class="valor">$160.000</span><span class="desc">Modalidad particular</span><span class="tag">5 sesiones</span></div>
-<div class="price-card"><h4>Pack 5 sesiones</h4><span class="valor">$65.000</span><span class="desc">Modalidad diferencial</span><span class="tag">5 sesiones</span></div>
+<div class="sub-cards">
+<div class="sub-card" style="text-align:center">
+<h3>Psicoterapia individual</h3>
+<span style="font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--salvia-oscuro);display:block;margin:1rem 0">$35.000</span>
+<p style="font-size:.9rem;color:var(--taupe)">Arancel particular · por sesión · Pago anticipado</p>
 </div>
-<p class="note" style="max-width:720px;margin:2.2rem auto 0">La salud mental debe ser accesible. Por eso, Psicointegra dispone de un arancel diferencial dirigido a personas pertenecientes al 40% de mayor vulnerabilidad socioeconómica, según el Registro Social de Hogares. Este se enviará directamente al WhatsApp una vez realizada la reserva de tu cita. Los criterios de acceso, vigencia y condiciones de los packs se informarán antes de la compra.</p>
+<div class="sub-card" style="text-align:center;border-top-color:var(--salvia-oscuro)">
+<h3>Arancel diferencial</h3>
+<span style="font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--salvia-oscuro);display:block;margin:1rem 0">$15.000</span>
+<p style="font-size:.9rem;color:var(--taupe)">Por sesión · RSH hasta el 40% · Accesibilidad real</p>
+</div>
+</div>
+<p class="note" style="max-width:720px;margin:2rem auto 0">La salud mental debe ser accesible. Por eso, Psicointegra dispone de un arancel diferencial dirigido a personas pertenecientes al 40% de mayor vulnerabilidad socioeconómica, según el Registro Social de Hogares. Este se enviará directamente al WhatsApp una vez realizada la reserva de tu cita. También ofrecemos packs de 5 sesiones con valores preferenciales ($160.000 particular / $65.000 diferencial).</p>
 </div>
 </section>
+
 <section id="talleres">
 <div class="wrap">
 <p class="sec-kicker">Talleres y programas grupales</p>
 <h2 class="sec-title">Espacios para encontrarnos, aprender y transformar</h2>
 <div class="sec-rule"></div>
 <div class="about-text" style="text-align:center">
-<p>En Psicointegra creemos que el bienestar también se construye colectivamente. Por eso, desarrollamos talleres y encuentros psicoeducativos destinados a generar espacios de reflexión, aprendizaje y construcción de herramientas para la vida cotidiana. Las actividades estarán abiertas tanto a consultantes como al público general, según las características de cada programa.</p>
+<p>En Psicointegra creemos que el bienestar también se construye colectivamente. Por eso, desarrollamos talleres y encuentros psicoeducativos destinados a generar espacios de reflexión, aprendizaje y construcción de herramientas para la vida cotidiana. Las actividades estarán abiertas tanto a consultantes como al público general.</p>
 </div>
-<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
-<div class="svc"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 6-8 11-8 11z"/></svg><h3>Maternidad y cuidados</h3><p>Encuentros para madres y cuidadoras · salud mental materna</p></div>
-<div class="svc"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-30 12 12)"/></svg><h3>Adicciones</h3><p>Prevención, consumo problemático y acompañamiento familiar</p></div>
-<div class="svc"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="4"/><path d="M12 13v8m-4-4l4 4 4-4"/></svg><h3>Autoconocimiento</h3><p>Autoestima, identidad y desarrollo personal</p></div>
-<div class="svc"><svg viewBox="0 0 24 24"><circle cx="7" cy="8" r="2.5"/><circle cx="17" cy="8" r="2.5"/><path d="M3 20c0-3 2-4.5 4-4.5s4 1.5 4 4.5m2-4.5c2 0 4 1.5 4 4.5"/></svg><h3>Parentalidad</h3><p>Habilidades parentales y vínculos familiares</p></div>
-<div class="svc"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 6-8 11-8 11z"/><path d="M9 10l2 2 4-4"/></svg><h3>Sexualidad</h3><p>Educación sexual y relaciones saludables</p></div>
-<div class="svc"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-9-9a4.5 4.5 0 0 1 9-2 4.5 4.5 0 0 1 9 2c-2 4.5-9 9-9 9z"/><path d="M8 11h3m2 0h3"/></svg><h3>Relaciones de pareja</h3><p>Comunicación, conflictos y responsabilidad afectiva</p></div>
+<div class="faq" style="max-width:800px;margin:0 auto">
+<details><summary>Maternidad y cuidados</summary><p>Encuentros para madres y cuidadoras · salud mental materna.</p></details>
+<details><summary>Adicciones</summary><p>Prevención, consumo problemático y acompañamiento familiar.</p></details>
+<details><summary>Autoconocimiento</summary><p>Autoestima, identidad y desarrollo personal.</p></details>
+<details><summary>Parentalidad</summary><p>Habilidades parentales y vínculos familiares.</p></details>
+<details><summary>Sexualidad</summary><p>Educación sexual y relaciones saludables.</p></details>
+<details><summary>Relaciones de pareja</summary><p>Comunicación, conflictos y responsabilidad afectiva.</p></details>
 </div>
-<p class="note">Valor: $10.000 la sesión</p>
+<p class="note" style="margin-top:2rem">Valor: <strong>$10.000 la sesión</strong></p>
 </div>
 </section>
+
 <section id="recursos" style="background:var(--beige-suave)">
 <div class="wrap">
 <p class="sec-kicker">Recursos psicológicos</p>
@@ -299,7 +319,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <div class="sub-cards">
 <div class="sub-card">
 <h3>Artículos y divulgación psicológica</h3>
-<p style="font-size:.95rem;color:var(--cafe-suave)">Contenidos de divulgación para comprender la salud mental desde una mirada integral, sin juicios y con base profesional.</p>
+<p style="font-size:.95rem;color:var(--cafe-suave)">Contenidos de divulgación para comprender la terbakud mental desde una mirada integral, sin juicios y con base profesional.</p>
 </div>
 <div class="sub-card">
 <h3>Guías y herramientas terapéuticas</h3>
@@ -315,6 +335,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 </div>
 </div>
 </section>
+
 <section id="agenda">
 <div class="wrap">
 <p class="sec-kicker">Agenda</p>
@@ -324,14 +345,14 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <div>
 <h3>Funcionamiento de la agenda</h3>
 <div class="steps">
-<div class="step"><p><strong>Selecciona el tipo de atención:</strong> psicoterapia para adultos, psicoterapia para adolescentes o consulta por otras prestaciones.</p></div>
+<div class="step"><p><strong>Selecciona el tipo de atención:</strong> psicoterapia para adultos, adolescentes u otras prestaciones.</p></div>
 <div class="step"><p><strong>Indica tu motivo de consulta</strong> (opcional).</p></div>
 <div class="step"><p><strong>Selecciona fecha y horario</strong> con disponibilidad actualizada.</p></div>
-<div class="step"><p><strong>Confirma tu reserva y realiza el pago:</strong> pago anticipado por transferencia o link de pago, con confirmación automática.</p></div>
-<div class="step"><p><strong>Recibe tu enlace de Google Meet</strong> junto con la confirmación de la sesión y recordatorios.</p></div>
+<div class="step"><p><strong>Confirma tu reserva y realiza el pago:</strong> pago anticipado por transferencia o link de pago.</p></div>
+<div class="step"><p><strong>Recibe tu enlace de Google Meet</strong> junto con la confirmación y recordatorios.</p></div>
 </div>
 <h3 style="margin-top:2.2rem">¿Por qué psicoterapia online?</h3>
-<p>La modalidad online permite acceder a atención psicológica desde un entorno familiar y cómodo, evitando desplazamientos y facilitando la continuidad de los procesos. Puede resultar especialmente conveniente para personas con dificultades de movilidad, sensibilidad a determinados estímulos, sintomatología depresiva o dificultades para mantener rutinas fuera del hogar. La modalidad y su pertinencia se evalúan considerando las necesidades de cada consultante.</p>
+<p>La modalidad online permite acceder a atención psicológica desde un entorno familiar y cómodo, evitando desplazamientos y facilitando la continuidad de los procesos. Puede resultar especialmente conveniente para personas con dificultades de movilidad, sensibilidad a determinados estímulos, sintomatología depresiva o dificultades para mantener rutinas fuera del hogar.</p>
 </div>
 <div>
 <h3>Condiciones de atención</h3>
@@ -351,6 +372,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 </div>
 </div>
 </section>
+
 <section id="faq" style="background:var(--beige-suave)">
 <div class="wrap">
 <p class="sec-kicker">Preguntas frecuentes</p>
@@ -368,6 +390,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 </div>
 </div>
 </section>
+
 <section id="contacto">
 <div class="wrap">
 <div class="contact-box">
@@ -378,11 +401,12 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <span>📱 <a href="https://wa.me/56968506890" target="_blank">+56 9 6850 6890</a></span>
 <span>✉️ <a href="mailto:ps.anaisnunez@gmail.com">ps.anaisnunez@gmail.com</a></span>
 <span>📷 <a href="https://instagram.com/ps.anais.nunez" target="_blank">@ps.anais.nunez</a></span>
-<span>🩺 <a href="https://www.doctoralia.cl" target="_blank">Perfil en Doctoralia</a></span>
+<span>🩺 <a href="https://www.doctoralia.cl/perfil/anais-nunez-hidalgo" target="_blank">Perfil en Doctoralia</a></span>
 </div>
 </div>
 </div>
 </section>
+
 <footer>
 <p class="foot-brand">Psicointegra <span style="color:var(--salvia)">|</span> Psicóloga Anaís Núñez</p>
 <div class="foot-sep">
@@ -392,6 +416,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 </div>
 <p class="foot-legal">La información compartida durante el proceso terapéutico se encuentra protegida por el deber de confidencialidad profesional. Este sitio es informativo y no reemplaza la atención de urgencia: ante una crisis o riesgo inmediato, contacta a Salud Responde al 600 360 7777 o al 1455 (SOS-Vida).<br><a href="https://koroacuna-cell.github.io/psicointegra/">Psicointegra</a> © 2026 · Villa Alemana, V Región</p>
 </footer>
+
 <a class="wa-float" href="https://wa.me/56968506890" target="_blank" aria-label="Escríbeme por WhatsApp">
 <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
 </a>
