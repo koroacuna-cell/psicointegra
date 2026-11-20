@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Psicointegra | Ps. Anaís Núñez. Psicóloga online en Chile. Trauma, ansiedad, TLP. Tarifas ajustadas. Registro 881079.">
 <title>Psicointegra | Ps. Anaís Núñez - Psicóloga Online</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--marfil:#FAF6EE;--beige:#EFE5D4;--beige-suave:#F5EDE0;--taupe:#9C856E;--salvia:#8A9A82;--salvia-oscuro:#5A6B52;--cafe:#2C221B;--texto:#3E3128;--blanco:#FFFFFF;--sombra:0 8px 24px rgba(44,34,27,.1)}
+:root{--marfil:#FAF6EE;--beige:#EFE5D4;--beige-suave:#F5EDE0;--taupe:#9C856E;--salvia:#8A9A82;--salvia-oscuro:#5A6B52;--cafe:#2C221B;--texto:#3E3128;--blanco:#FFFFFF;--sombra:0 8px 24px rgba(44,34,27,.08)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Lora',serif;background:var(--marfil);color:var(--texto);line-height:1.7;font-size:1.05rem}
@@ -19,42 +19,52 @@ header{background:rgba(250,246,238,.95);backdrop-filter:blur(10px);padding:.8rem
 .brand-txt span{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--taupe)}
 nav{display:flex;gap:1.2rem}
 nav a{text-decoration:none;color:var(--cafe);font-size:.85rem;font-weight:600}
-.btn{display:inline-block;text-decoration:none;border-radius:50px;padding:.8rem 2rem;font-weight:700;transition:.3s;border:none}
+.btn{display:inline-block;text-decoration:none;border-radius:50px;padding:.9rem 2.2rem;font-weight:700;transition:.3s;border:none;font-size:1rem}
 .btn-salvia{background:var(--salvia-oscuro);color:var(--marfil);box-shadow:0 6px 18px rgba(90,107,82,.4)}
-.btn-urgencia{background:var(--cafe);color:var(--marfil);animation:pulse 2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(44,34,27,.4)}70%{box-shadow:0 0 0 10px rgba(44,34,27,0)}100%{box-shadow:0 0 0 0 rgba(44,34,27,0)}}
-.hero{padding:3rem 5% 2rem;text-align:center;background:linear-gradient(180deg,var(--marfil),var(--beige-suave))}
-.hero h1{font-size:2.4rem;margin-bottom:.5rem}
-.tarifas-top{background:var(--blanco);border-top:4px solid var(--salvia);border-radius:16px;padding:1.5rem;margin:1.5rem auto;max-width:800px;box-shadow:var(--sombra);text-align:center}
+.btn-salvia:hover{background:var(--cafe);transform:translateY(-2px)}
+.hero{padding:4rem 5% 3rem;background:linear-gradient(180deg,var(--marfil) 0%,var(--beige-suave) 100%);display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap}
+.hero-txt{flex:1;min-width:300px;text-align:left}
+.hero-txt h1{font-size:2.8rem;margin-bottom:.5rem}
+.hero-txt .cta-box{background:var(--blanco);padding:1.5rem;border-radius:16px;border-left:4px solid var(--salvia);box-shadow:var(--sombra);margin:1.5rem 0}
+.hero-txt .cta-box p{font-size:1.05rem;color:var(--texto);margin-bottom:1rem;font-style:italic}
+.hero-plant{flex:0 0 280px;display:flex;justify-content:center}
+.hero-plant svg{width:100%;height:auto;max-width:280px}
+.tarifas-top{background:var(--blanco);border-top:4px solid var(--salvia);border-radius:16px;padding:1.5rem;margin:2rem auto;max-width:800px;box-shadow:var(--sombra);text-align:center}
 .tarifas-top h3{color:var(--salvia-oscuro);font-size:1.3rem;margin-bottom:.8rem}
 .tarifas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.8rem;margin-bottom:1rem}
 .tarifa-item{background:var(--beige-suave);padding:.8rem;border-radius:10px}
 .tarifa-item .etiq{font-size:.7rem;text-transform:uppercase;letter-spacing:1px;color:var(--taupe);display:block}
 .tarifa-item .val{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--cafe);display:block;margin-top:.2rem}
-.urgency-banner{background:var(--salvia-oscuro);color:var(--marfil);border-radius:16px;padding:1.5rem;margin:2rem auto;max-width:800px;text-align:center}
-.calendar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:.6rem;margin:1rem 0}
-.cal-day{background:rgba(255,255,255,.15);padding:.6rem;border-radius:8px;font-size:.85rem}
-.cal-day .dia{font-weight:700;display:block}
-.cal-day.disponible{background:var(--marfil);color:var(--salvia-oscuro)}
-.cal-day.disponible .dia{font-weight:800}
-section{padding:2.5rem 5%}
-.wrap{max-width:850px;margin:0 auto}
-.sec-title{text-align:center;font-size:1.7rem;margin-bottom:.5rem}
-.sec-kicker{text-align:center;letter-spacing:3px;text-transform:uppercase;font-size:.7rem;color:var(--taupe);font-weight:700}
-.sec-rule{width:50px;height:3px;background:var(--salvia);margin:0 auto 1.5rem}
+section{padding:3rem 5%}
+.wrap{max-width:900px;margin:0 auto}
+.sec-title{text-align:center;font-size:1.8rem;margin-bottom:.5rem}
+.sec-kicker{text-align:center;letter-spacing:3px;text-transform:uppercase;font-size:.7rem;color:var(--taupe);font-weight:700;margin-bottom:.5rem}
+.sec-rule{width:50px;height:3px;background:var(--salvia);margin:0 auto 2rem}
+.servicios-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem}
+.servicio-card{background:var(--blanco);border-radius:14px;padding:1.5rem;border-top:3px solid var(--salvia);box-shadow:var(--sombra);transition:.3s}
+.servicio-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(44,34,27,.12)}
+.servicio-card h4{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cafe);margin-bottom:.6rem}
+.servicio-card p{font-size:.9rem;color:var(--texto);line-height:1.6}
 .faq details{background:var(--blanco);border:1px solid rgba(156,133,110,.3);border-radius:10px;margin-bottom:.6rem;padding:1rem 1.2rem;cursor:pointer}
 .faq details[open]{box-shadow:var(--sombra);border-left:4px solid var(--salvia)}
 .faq summary{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cafe);list-style:none;display:flex;justify-content:space-between;font-weight:700}
 .faq summary::after{content:"+";color:var(--salvia-oscuro);font-size:1.3rem}
 .faq details[open] summary::after{content:"−"}
 .faq p{margin-top:.8rem;font-size:.95rem;color:var(--texto)}
-.contact-box{background:var(--beige);border-radius:16px;padding:2rem;text-align:center}
-.contact-data{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:center;margin-top:1.2rem;font-size:.9rem}
+.contact-box{background:var(--beige);border-radius:16px;padding:2.5rem 2rem;text-align:center}
+.contact-data{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:center;margin-top:1.5rem;font-size:.95rem}
 .contact-data a{color:var(--cafe);text-decoration:none;font-weight:600;border-bottom:1px solid var(--salvia)}
-footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2rem 5%;font-size:.8rem}
-.wa-float{position:fixed;bottom:20px;right:20px;width:55px;height:55px;background:var(--salvia-oscuro);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(44,34,27,.4);z-index:1000;animation:pulse 2.5s infinite}
-.wa-float svg{width:28px;height:28px;fill:var(--marfil)}
-@media(max-width:768px){nav{display:none}.hero h1{font-size:2rem}.calendar-grid{grid-template-columns:repeat(3,1fr)}}
+footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2.5rem 5%;font-size:.8rem}
+.wa-float{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:var(--salvia-oscuro);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(44,34,27,.4);z-index:1000;animation:pulse 2.5s infinite}
+.wa-float svg{width:30px;height:30px;fill:var(--marfil)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(90,107,82,.6)}70%{box-shadow:0 0 0 15px rgba(90,107,82,0)}100%{box-shadow:0 0 0 0 rgba(90,107,82,0)}}
+@media(max-width:768px){
+  nav{display:none}
+  .hero{flex-direction:column;text-align:center;padding:3rem 5% 2rem}
+  .hero-txt{text-align:center}
+  .hero-txt .cta-box{text-align:left}
+  .hero-plant{order:-1;margin-bottom:1rem}
+}
 </style>
 </head>
 <body>
@@ -68,9 +78,25 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2rem 
 </header>
 
 <div class="hero">
+<div class="hero-txt">
 <h1>Psicointegra</h1>
 <p>Atención psicológica online integral para adolescentes y adultos en Chile. Un espacio seguro para transformar tu bienestar.</p>
-<a class="btn btn-urgencia" href="https://wa.me/56968506890?text=Hola%20Ana%C3%ADs%2C%20quiero%20agendar%20una%20sesi%C3%B3n" target="_blank">Reservar mi hora ahora</a>
+<div class="cta-box">
+<p>"Da el primer paso hoy. No necesitas tener un diagnóstico ni saber exactamente qué te ocurre. Podemos descubrirlo en conjunto."</p>
+<a class="btn btn-salvia" href="https://wa.me/56968506890?text=Hola%20Ana%C3%ADs%2C%20quiero%20comenzar%20mi%20proceso%20terap%C3%A9utico" target="_blank">Comenzar mi proceso por WhatsApp</a>
+</div>
+</div>
+<div class="hero-plant">
+<svg viewBox="0 0 260 280" aria-hidden="true">
+<path d="M60 270 C 90 190, 120 110, 200 30" stroke="#8A9A82" stroke-width="2.5" fill="none"/>
+<ellipse cx="118" cy="150" rx="34" ry="13" fill="#8A9A82" opacity=".8" transform="rotate(-38 118 150)"/>
+<ellipse cx="140" cy="118" rx="30" ry="12" fill="#6E7F66" opacity=".75" transform="rotate(28 140 118)"/>
+<ellipse cx="162" cy="86" rx="28" ry="11" fill="#8A9A82" opacity=".7" transform="rotate(-32 162 86)"/>
+<ellipse cx="182" cy="58" rx="24" ry="10" fill="#B7A48B" opacity=".65" transform="rotate(24 182 58)"/>
+<ellipse cx="96" cy="186" rx="30" ry="12" fill="#6E7F66" opacity=".65" transform="rotate(34 96 186)"/>
+<ellipse cx="205" cy="34" rx="18" ry="8" fill="#8A9A82" opacity=".6" transform="rotate(-24 205 34)"/>
+</svg>
+</div>
 </div>
 
 <section id="tarifas" style="padding-top:1rem;padding-bottom:1rem">
@@ -89,34 +115,31 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2rem 
 </div>
 </section>
 
-<section id="agenda">
-<div class="wrap">
-<div class="urgency-banner">
-<h3>📅 Disponibilidad de los próximos días</h3>
-<div class="calendar-grid">
-<div class="cal-day"><span class="dia">Martes</span><span>2 cupos</span></div>
-<div class="cal-day disponible"><span class="dia">Miércoles</span><span>Disponible</span></div>
-<div class="cal-day disponible"><span class="dia">Jueves</span><span>Disponible</span></div>
-<div class="cal-day"><span class="dia">Viernes</span><span>1 cupo</span></div>
-<div class="cal-day"><span class="dia">Próx. Semana</span><span>Abierta</span></div>
-</div>
-<p style="font-size:.85rem;opacity:.9;margin-bottom:1rem">Horarios actualizados diariamente. Pago anticipado para confirmar.</p>
-<a class="btn" href="https://wa.me/56968506890?text=Hola%2C%20vi%20disponibilidad%20en%20la%20web%20y%20quiero%20reservar" target="_blank" style="background:var(--marfil);color:var(--salvia-oscuro)">Asegurar mi cupo por WhatsApp</a>
-</div>
-</div>
-</section>
-
 <section id="servicios" style="background:var(--beige-suave)">
 <div class="wrap">
 <p class="sec-kicker">¿En qué te puedo ayudar?</p>
 <h2 class="sec-title">Servicios y Áreas de Trabajo</h2>
 <div class="sec-rule"></div>
-<div class="faq">
-<details><summary>Psicoterapia Individual</summary><p>Procesos personalizados online (45-60 min) para abordar ansiedad, depresión, duelo o transiciones vitales con Terapia Sistémica Breve.</p></details>
-<details><summary>Trauma y Experiencias Adversas</summary><p>Acompañamiento especializado en trauma complejo y experiencias que afectan la vida emocional, a tu propio ritmo.</p></details>
-<details><summary>Regulación Emocional y TLP</summary><p>Herramientas prácticas para manejar la intensidad emocional y fortalecer la identidad.</p></details>
-<details><summary>Adicciones y Consumo Problemático</summary><p>Abordaje sin juicios, enfocado en la motivación para el cambio y prevención de recaídas.</p></details>
-<details><summary>Mascota de Apoyo Emocional</summary><p>Evaluación profesional para determinar la pertinencia de un animal de apoyo. (Arancel: $45.000. Entrega en 24 hrs).</p></details>
+<div class="servicios-grid">
+<div class="servicio-card">
+<h4>Psicoterapia Individual</h4>
+<p>Procesos personalizados online (45-60 min) para abordar ansiedad, depresión, duelo o transiciones vitales con Terapia Sistémica Breve.</p>
+</div>
+<div class="servicio-card">
+<h4>Trauma y Experiencias Adversas</h4>
+<p>Acompañamiento especializado en trauma complejo y experiencias que afectan la vida emocional, a tu propio ritmo y con total confidencialidad.</p>
+</div>
+<div class="servicio-card">
+<h4>Regulación Emocional y TLP</h4>
+<p>Herramientas prácticas para manejar la intensidad emocional, mejorar las relaciones interpersonales y fortalecer la identidad.</p>
+</div>
+<div class="servicio-card">
+<h4>Adicciones y Consumo Problemático</h4>
+<p>Abordaje sin juicios, enfocado en la identificación de patrones, motivación para el cambio y prevención de recaídas.</p>
+</div>
+</div>
+<div class="faq" style="margin-top:2rem">
+<details><summary>Evaluación para Mascota de Apoyo Emocional</summary><p>Proceso de evaluación profesional para determinar la pertinencia de un animal de apoyo. (Arancel: $45.000. Entrega en 24 hrs si corresponde).</p></details>
 </div>
 </div>
 </section>
@@ -126,9 +149,15 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2rem 
 <p class="sec-kicker">Más recursos</p>
 <h2 class="sec-title">Talleres y Biblioteca</h2>
 <div class="sec-rule"></div>
-<div class="faq">
-<details><summary>Talleres Grupales ($10.000 / sesión)</summary><p>Maternidad y cuidados, Parentalidad, Autoconocimiento y Relaciones de pareja.</p></details>
-<details><summary>Guías Terapéuticas Digitales (Desde $5.000)</summary><p>Material práctico con estrategias sobre manejo de ansiedad, comunicación asertiva e identificación de emociones.</p></details>
+<div class="servicios-grid">
+<div class="servicio-card">
+<h4>Talleres Grupales ($10.000 / sesión)</h4>
+<p>Encuentros psicoeducativos sobre: Maternidad y cuidados, Parentalidad, Autoconocimiento y Relaciones de pareja.</p>
+</div>
+<div class="servicio-card">
+<h4>Guías Terapéuticas Digitales</h4>
+<p>Material práctico desde $5.000 con 25-50 estrategias sobre manejo de ansiedad, comunicación asertiva e identificación de emociones.</p>
+</div>
 </div>
 </div>
 </section>
@@ -142,7 +171,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2rem 
 <details>
 <summary>Leer mi historia y formación profesional</summary>
 <p>Psicóloga de la Universidad de Playa Ancha, con diplomado en Salud Mental en APS y postítulo en Terapia Sistémica Breve. Especializada en trauma y casos de alta complejidad.</p>
-<p style="margin-top:.8rem"><em>"No se trata de adaptarte a cualquier costo, sino de reconocer qué aspectos de tu entorno necesitan transformarse".</em></p>
+<p style="margin-top:.8rem;font-style:italic;color:var(--salvia-oscuro)">"No se trata de adaptarte a cualquier costo, sino de reconocer qué aspectos de tu entorno necesitan transformarse".</p>
 </details>
 </div>
 </div>
@@ -151,13 +180,12 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:2rem 
 <section id="contacto">
 <div class="wrap">
 <div class="contact-box">
-<h2>Da el primer paso hoy</h2>
-<p>No necesitas tener un diagnóstico. Podemos descubrirlo en conjunto.</p>
-<a class="btn btn-salvia" href="https://wa.me/56968506890?text=Hola%20Ana%C3%ADs%2C%20quiero%20comenzar%20mi%20proceso" target="_blank">Comenzar mi proceso</a>
+<h2>¿Tienes dudas antes de empezar?</h2>
+<p>Estoy aquí para orientarte. Escríbeme sin compromiso.</p>
 <div class="contact-data">
 <span>📱 <a href="https://wa.me/56968506890">+56 9 6850 6890</a></span>
 <span>✉️ <a href="mailto:ps.anaisnunez@gmail.com">ps.anaisnunez@gmail.com</a></span>
-<span>🩺 <a href="https://www.doctoralia.cl/perfil/anais-nunez-hidalgo" target="_blank">Doctoralia</a></span>
+<span>🩺 <a href="https://www.doctoralia.cl/perfil/anais-nunez-hidalgo" target="_blank">Ver perfil en Doctoralia</a></span>
 </div>
 </div>
 </div>
