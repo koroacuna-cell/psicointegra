@@ -65,12 +65,6 @@ section{padding:4.5rem 5%}
 .about-text{max-width:760px;margin:0 auto 2.5rem;font-size:1.02rem;color:var(--cafe-suave)}
 .about-text p{margin-bottom:1.1rem}
 .about-text .destacado{font-family:'Playfair Display',serif;font-style:italic;font-size:1.15rem;color:var(--cafe);border-left:3px solid var(--salvia);padding-left:1.2rem;margin-top:1.6rem}
-.sub-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.6rem}
-.sub-card{background:var(--beige-suave);border-radius:18px;padding:2rem;border-top:3px solid var(--salvia)}
-.sub-card h3{font-size:1.25rem;margin-bottom:1rem}
-.sub-card ul{list-style:none}
-.sub-card li{padding:.55rem 0 .55rem 1.4rem;position:relative;font-size:.95rem;color:var(--cafe-suave)}
-.sub-card li::before{content:"";position:absolute;left:0;top:1.05rem;width:8px;height:8px;border-radius:50%;background:var(--taupe)}
 .note{margin-top:2rem;text-align:center;font-style:italic;color:var(--taupe);font-size:.95rem}
 .price-banner{background:var(--salvia-oscuro);color:var(--marfil);text-align:center;padding:3rem 5%}
 .price-banner h3{color:var(--marfil);font-size:1.8rem;margin-bottom:.5rem}
@@ -85,7 +79,10 @@ section{padding:4.5rem 5%}
 .faq summary{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cafe);list-style:none;display:flex;justify-content:space-between;align-items:center;font-weight:600}
 .faq summary::after{content:"+";color:var(--salvia-oscuro);font-size:1.4rem}
 .faq details[open] summary::after{content:"−"}
-.faq p{margin-top:.9rem;font-size:.95rem;color:var(--cafe-suave);line-height:1.6}
+.faq p, .faq ul{margin-top:.9rem;font-size:.95rem;color:var(--cafe-suave);line-height:1.6}
+.faq ul{list-style:none;padding:0}
+.faq li{padding:.5rem 0 .5rem 1.5rem;position:relative}
+.faq li::before{content:"✦";position:absolute;left:0;color:var(--salvia)}
 .table{width:100%;border-collapse:collapse;margin-top:1.5rem;background:var(--blanco);border-radius:16px;overflow:hidden;box-shadow:var(--sombra)}
 .table td{padding:.9rem 1.2rem;border-bottom:1px solid rgba(183,164,139,.25);font-size:.93rem}
 .table tr:last-child td{border-bottom:none}
@@ -161,9 +158,9 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <p>Creo en una psicología que no se limite a identificar dificultades, sino que también permita cuestionar aquellas condiciones que las sostienen, reconocer recursos y abrir posibilidades de cambio. Mi propósito es acompañar a cada persona en la construcción de una vida que tenga sentido para ella, respetando su historia, sus tiempos y sus propias definiciones de bienestar.</p>
 <p class="destacado">Porque no se trata de adaptar a las personas a cualquier costo, sino también de reconocer qué aspectos de su entorno necesitan transformarse para hacer posible una vida más digna y satisfactoria.</p>
 </div>
-<div class="sub-cards">
-<div class="sub-card">
-<h3>Formación académica</h3>
+<div class="faq" style="max-width:800px; margin:0 auto;">
+<details>
+<summary>Formación académica</summary>
 <ul>
 <li>Psicóloga, licenciada en psicología, Universidad de Playa Ancha</li>
 <li>Actualmente cursando postítulo en especialista sistémica breve</li>
@@ -171,16 +168,16 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <li>Especializaciones en trauma, complejo y casos de alta complejidad</li>
 <li>Certificados para tratamiento de adicciones, primeros auxilios psicológicos, redacción de informes neuropsicológicos, entre otros</li>
 </ul>
-</div>
-<div class="sub-card">
-<h3>Experiencia profesional</h3>
+</details>
+<details>
+<summary>Experiencia profesional</summary>
 <ul>
 <li>Intervención psicológica con adolescentes y jóvenes en un centro de tratamiento ambulatorio de adicciones</li>
 <li>Psicoterapia online con adolescentes y adultos</li>
 <li>Talleres psicosociales para pacientes, referentes familiares y comunidades</li>
 <li>Intervenciones preventivas en contextos laborales y organizaciones, especialmente relacionadas con consumo de alcohol y otras sustancias</li>
 </ul>
-</div>
+</details>
 </div>
 </div>
 </section>
@@ -255,17 +252,13 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <details><summary>06. Ideación suicida</summary><p>Evaluación y acompañamiento psicológico de personas que atraviesan experiencias de sufrimiento emocional y pensamientos suicidas, considerando sus necesidades de seguridad y apoyo.</p></details>
 </div>
 
-<div class="sub-cards" style="margin-top:3rem">
-<div class="sub-card">
-<h3>Evaluación y certificado de mascotas de apoyo emocional</h3>
-<p style="font-size:.95rem;color:var(--cafe-suave)">Proceso de evaluación orientado a explorar la pertinencia de contar con un animal de apoyo emocional, considerando las necesidades y circunstancias particulares de la persona.</p>
+<div class="faq" style="max-width:800px; margin:3rem auto 0;">
+<details>
+<summary>Evaluación y certificado de mascotas de apoyo emocional</summary>
+<p>Proceso de evaluación orientado a explorar la pertinencia de contar con un animal de apoyo emocional, considerando las necesidades y circunstancias particulares de la persona.</p>
 <p style="font-size:.85rem;color:var(--taupe);margin-top:.8rem;font-style:italic">La emisión de un certificado estará sujeta a la evaluación profesional y a los criterios correspondientes. No se garantiza su emisión por el solo hecho de solicitarlo.</p>
-</div>
-<div class="sub-card" style="text-align:center;display:flex;flex-direction:column;justify-content:center">
-<h3>Arancel de evaluación</h3>
-<span style="font-family:'Playfair Display',serif;font-size:2.6rem;color:var(--salvia-oscuro)">$45.000</span>
-<p style="font-size:.85rem;color:var(--taupe)">La entrega del certificado se realiza en plazo de 24 horas, según los resultados de la evaluación.</p>
-</div>
+<p style="margin-top:1rem;font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--salvia-oscuro)">Arancel: $45.000</p>
+</details>
 </div>
 </div>
 </section>
@@ -275,19 +268,19 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <p class="sec-kicker">Aranceles y modalidades</p>
 <h2 class="sec-title">Inversión en tu proceso</h2>
 <div class="sec-rule"></div>
-<div class="sub-cards">
-<div class="sub-card" style="text-align:center">
-<h3>Psicoterapia individual</h3>
-<span style="font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--salvia-oscuro);display:block;margin:1rem 0">$35.000</span>
-<p style="font-size:.9rem;color:var(--taupe)">Arancel particular · por sesión · Pago anticipado</p>
+<div class="faq" style="max-width:800px; margin:0 auto;">
+<details>
+<summary>Psicoterapia individual (Arancel Particular)</summary>
+<p style="font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--salvia-oscuro);margin-bottom:.5rem">$35.000 <small style="font-size:1rem;font-weight:400">/ sesión</small></p>
+<p>Arancel particular · por sesión · Pago anticipado</p>
+</details>
+<details>
+<summary>Arancel Diferencial (Accesibilidad Real)</summary>
+<p style="font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--salvia-oscuro);margin-bottom:.5rem">$15.000 <small style="font-size:1rem;font-weight:400">/ sesión</small></p>
+<p>Por sesión · RSH hasta el 40%</p>
+</details>
 </div>
-<div class="sub-card" style="text-align:center;border-top-color:var(--salvia-oscuro)">
-<h3>Arancel diferencial</h3>
-<span style="font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--salvia-oscuro);display:block;margin:1rem 0">$15.000</span>
-<p style="font-size:.9rem;color:var(--taupe)">Por sesión · RSH hasta el 40% · Accesibilidad real</p>
-</div>
-</div>
-<p class="note" style="max-width:720px;margin:2rem auto 0">La salud mental debe ser accesible. Por eso, Psicointegra dispone de un arancel diferencial dirigido a personas pertenecientes al 40% de mayor vulnerabilidad socioeconómica, según el Registro Social de Hogares. Este se enviará directamente al WhatsApp una vez realizada la reserva de tu cita. También ofrecemos packs de 5 sesiones con valores preferenciales ($160.000 particular / $65.000 diferencial).</p>
+<p class="note" style="max-width:720px;margin:2rem auto 0">La salud mental debe ser accesible. El arancel diferencial se enviará directamente al WhatsApp una vez realizada la reserva. También ofrecemos packs de 5 sesiones con valores preferenciales ($160.000 particular / $65.000 diferencial).</p>
 </div>
 </section>
 
@@ -297,7 +290,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <h2 class="sec-title">Espacios para encontrarnos, aprender y transformar</h2>
 <div class="sec-rule"></div>
 <div class="about-text" style="text-align:center">
-<p>En Psicointegra creemos que el bienestar también se construye colectivamente. Por eso, desarrollamos talleres y encuentros psicoeducativos destinados a generar espacios de reflexión, aprendizaje y construcción de herramientas para la vida cotidiana. Las actividades estarán abiertas tanto a consultantes como al público general.</p>
+<p>En Psicointegra creemos que el bienestar también se construye colectivamente. Por eso, desarrollamos talleres y encuentros psicoeducativos destinados a generar espacios de reflexión, aprendizaje y construcción de herramientas para la vida cotidiana.</p>
 </div>
 <div class="faq" style="max-width:800px;margin:0 auto">
 <details><summary>Maternidad y cuidados</summary><p>Encuentros para madres y cuidadoras · salud mental materna.</p></details>
@@ -316,13 +309,13 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <p class="sec-kicker">Recursos psicológicos</p>
 <h2 class="sec-title">Biblioteca Psicointegra</h2>
 <div class="sec-rule"></div>
-<div class="sub-cards">
-<div class="sub-card">
-<h3>Artículos y divulgación psicológica</h3>
-<p style="font-size:.95rem;color:var(--cafe-suave)">Contenidos de divulgación para comprender la terbakud mental desde una mirada integral, sin juicios y con base profesional.</p>
-</div>
-<div class="sub-card">
-<h3>Guías y herramientas terapéuticas</h3>
+<div class="faq" style="max-width:800px; margin:0 auto;">
+<details>
+<summary>Artículos y divulgación psicológica</summary>
+<p>Contenidos de divulgación para comprender la salud mental desde una mirada integral, sin juicios y con base profesional.</p>
+</details>
+<details>
+<summary>Guías y herramientas terapéuticas</summary>
 <ul>
 <li>Manejo de ansiedad y comunicación asertiva</li>
 <li>Identificación de emociones</li>
@@ -331,7 +324,7 @@ footer{background:var(--cafe);color:var(--beige);text-align:center;padding:3rem 
 <li>Autoconocimiento y desarrollo personal</li>
 </ul>
 <p style="margin-top:1rem;font-size:.9rem;color:var(--salvia-oscuro)"><strong>Precio inicial por guía: $5.000.</strong> Cada guía puede contener 25 o 50 estrategias, según la temática y el alcance del material.</p>
-</div>
+</details>
 </div>
 </div>
 </section>
