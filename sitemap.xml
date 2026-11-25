@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://koroacuna-cell.github.io/psicointegra/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://koroacuna-cell.github.io/psicointegra/#trauma</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://koroacuna-cell.github.io/psicointegra/#faq</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://koroacuna-cell.github.io/psicointegra/#valores</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://koroacuna-cell.github.io/psicointegra/#enfoque</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://koroacuna-cell.github.io/psicointegra/#servicios</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://koroacuna-cell.github.io/psicointegra/#talleres-recursos</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://koroacuna-cell.github.io/psicointegra/#sobre-mi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://koroacuna-cell.github.io/psicointegra/#agenda</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://koroacuna-cell.github.io/psicointegra/#contacto</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
